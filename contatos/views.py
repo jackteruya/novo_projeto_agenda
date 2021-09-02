@@ -20,6 +20,7 @@ def index(request):
         'contatos': contatos
     })
 
+
 def ver_contato(request, id):
     # try:
     #     contato = Contato.objects.get(id=id)
@@ -37,6 +38,7 @@ def ver_contato(request, id):
     return render(request, 'contatos/ver_contato.html', {
         'contato': contato
     })
+
 
 def busca(request):
     termo = request.GET.get('termo')
